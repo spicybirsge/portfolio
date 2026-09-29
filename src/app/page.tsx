@@ -16,7 +16,7 @@ export default function Home() {
      
         <h1 id="intro-title" className="mt-6 text-4xl font-semibold tracking-tight">{portfolio.profile.name}</h1>
         <p className="mt-4 font-mono text-sm text-brand">{portfolio.profile.role}</p>
-        <p className="mt-5 max-w-[510px] text-base leading-7 text-muted-foreground">{portfolio.profile.summary}</p>
+        <p className="mt-5 max-w-[510px] whitespace-pre-line text-base leading-7 text-muted-foreground">{portfolio.profile.summary}</p>
         <div className="mt-8 flex flex-wrap gap-6 font-mono text-sm text-muted-foreground">
           <a href={"https://github.com/" + portfolio.github.username} target="_blank" rel="noreferrer" className="hover:text-foreground">github ↗</a>
           <a href={"mailto:" + portfolio.contact.email} className="hover:text-foreground">email ↗</a>
