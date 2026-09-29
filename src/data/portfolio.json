@@ -1,53 +1,190 @@
 {
   "site": {
     "name": "Shaheer Ahamed",
-    "shortName": "s.",
-    "description": "A developer's corner of the internet. Thoughtful interfaces, useful tools, and things made with care.",
-    "resumeUrl": "https://youtube.com"
+    "description": "Software Engineer based in Sri Lanka",
+    "resumeUrl": "/resume.pdf"
   },
   "navigation": [
-    { "label": "home", "href": "/" },
-    { "label": "work", "href": "/work" }
+    {
+      "label": "home",
+      "href": "/"
+    },
+    {
+      "label": "work",
+      "href": "/work"
+    }
   ],
   "profile": {
-    "name": "Your Name",
-    "role": "fullstack developer",
-    "company": "Acme Corp.",
-    "summary": "I build web applications end to end — from database schemas to polished UIs. Focused on performance, clean APIs, and systems that scale.",
-    "eyebrow": "Developer. Designer. Curious human.",
-    "headline": "Making the web",
-    "headlineAccent": "a little more human.",
-    "intro": "Hey, I'm Alex — a software developer who enjoys turning complex ideas into simple, useful digital experiences. Currently building, learning, and chasing the details.",
-    "location": "Colombo, Sri Lanka",
-    "availability": "available for work",
-    "about": "I work at the intersection of design and engineering. From the first sketch to the final interaction, I care about how a product feels as much as how it works. Outside of code, you'll find me exploring new places, collecting ideas, and making another cup of coffee.",
-    "currently": "Exploring creative coding & better developer tools"
+    "name": "Shaheer Ahamed",
+    "role": "Software engineer",
+    "company": null,
+    "summary": "I build applications ranging from backend systems, apis, work with databases while making sure they are scalable, while also building frontend clients for the web, mobile and desktop apps.",
+    "availability": null
   },
-  "clock": { "timeZone": "Asia/Colombo", "label": "LK" },
-  "github": { "username": "spicybirsge", "heading": "Contributions", "description": "An ongoing record of building, experimenting, and showing up." },
+  "clock": {
+    "timeZone": "Asia/Colombo",
+    "label": "LK"
+  },
+  "github": {
+    "username": "spicybirsge",
+    "heading": "Contributions"
+  },
   "sections": {
     "skillsTitle": "Tools I work with",
     "workTitle": "Top projects",
-    "workDescription": "Small experiments and bigger ideas, brought to life with code.",
+    "workDescription": "",
     "experienceTitle": "Experience",
-    "aboutTitle": "A person behind the pixels.",
     "contactTitle": "Get in touch",
-    "contactDescription": "I'm always up for a good conversation, a thoughtful collaboration, or an idea that needs bringing to life.",
-    "footer": "Made with curiosity & a little too much coffee."
+    "contactDescription": "I'm always up for a good conversation. Contact me using anything below.",
+    "footer": "Made with 🧠 by Shaheer"
   },
-  "contact": { "email": "hello@example.com", "label": "Let's make it happen." },
+  "contact": {
+    "email": "contact@shaheerahamed.com"
+  },
   "socials": [
-    { "label": "GitHub", "url": "https://github.com/spicybirsge" },
-    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/example" },
-    { "label": "Instagram", "url": "https://www.instagram.com/example" }
+    {
+      "label": "GitHub",
+      "url": "https://github.com/spicybirsge"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/shaheer-ahamed-80bb65218/"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/ahamedboi"
+    },
+    {
+      "label": "Discord Server",
+      "url": "https://discord.gg/vbysEzHckS"
+    },
+    {
+    "label": "Discord Profile",
+    "url": "https://discord.com/users/818903544723406858"
+    }
   ],
   "work": [
-    { "id": "work-1", "slug": "studio-north", "order": 1, "published": true, "company": "Studio North", "role": "Frontend Developer", "startDate": "2025-01-01", "endDate": null, "description": "Building accessible interfaces and a shared design system for a small product team.", "url": null },
-    { "id": "work-2", "slug": "independent", "order": 2, "published": true, "company": "Independent", "role": "Freelance Developer", "startDate": "2023-06-01", "endDate": "2024-12-31", "description": "Helping small businesses bring their ideas online with thoughtful, fast websites.", "url": null }
+    {
+      "id": "0001",
+      "order": 1,
+      "published": true,
+      "company": "Independent",
+      "role": "Freelance Developer",
+      "startDate": "2024-05-01",
+      "endDate": null,
+      "description": "Building applications for small, medium scale businesses and startups."
+     
+    }
   ],
   "projects": [
-    { "id": "project-1", "slug": "orbit", "order": 1, "published": true, "name": "Orbit", "category": "Productivity / Web app", "description": "A calmer place to plan your day. Tasks, notes, and small wins, all in one thoughtful workspace.", "tags": ["Next.js", "TypeScript", "Tailwind"], "accent": "blue", "monogram": "O", "year": "2026", "url": null, "repoUrl": null },
-    { "id": "project-2", "slug": "fieldnotes", "order": 2, "published": true, "name": "Fieldnotes", "category": "Writing / Personal project", "description": "An intentionally simple home for ideas. Capture the fleeting thoughts and find them when they matter.", "tags": ["React", "MDX", "Design"], "accent": "orange", "monogram": "f.", "year": "2025", "url": null, "repoUrl": null }
+    {
+      "id": "0001",
+      "slug": "partlens",
+      "order": 1,
+      "published": true,
+      "name": "PartLens",
+      "description": "A side project I built which allows you to upload 3D .glb files of your machine, then upload manuals and link it to the machines parts, allowing you to share and let users understand how to operate the machine easily",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "ShadCN",
+        "Express",
+        "PostgreSQL",
+        "Redis",
+        "Drizzle",
+        "Zustand"
+      ],
+      "year": "2026",
+      "url": "https://partlens.shaheerahamed.com",
+      "repoUrl": "https://github.com/spicybirsge/PartLens"
+    },
+    
+     {
+      "id": "0002",
+      "slug": "Arma-gift-registry",
+      "order": 2,
+      "published": true,
+      "name": "Arma Gift Registry",
+      "description": "Arma Gift Registry is a gift registry platform intended for weddings. I built the entire system from frontend to backend, with an admin panel, while also integrating with payment gateways like onepay.lk for handling payments",
+      "tags": [
+        "TypeScript",
+        "Next.js",
+        "ShadCN",
+        "Express",
+        "MongoDB",
+        "Redis"
+            ],
+      "year": "2025",
+      "url": null,
+      "repoUrl": null
+    },
+     {
+      "id": "0003",
+      "slug": "markdownshare",
+      "order": 3,
+      "published": true,
+      "name": "Markdown Share",
+      "description": "Markdown share is a opensource markdown sharing platform similar to github gist. It requires no account, has a text editor that lets you create markdown and share them with the world.",
+      "tags": [
+        "Next.js",
+        "Radix UI",
+        "Express",
+        "MongoDB"
+            ],
+      "year": "2024",
+      "url": "https://markdownshare.shaheerahamed.com",
+      "repoUrl": "https://github.com/spicybirsge/markdown-share"
+    },
+    {
+      "id": "0004",
+      "slug": "NoteHub",
+      "order": 4,
+      "published": true,
+      "name": "NoteHub",
+      "description": "NoteHub was a note managing and collaboration platform that allowed you to create notes, share them. It also featured collaborations allowing you to collaborate with other users by sharing an invite link, version control. It also had other features like following users and make their published notes appear on your feed and more",
+      "tags": [
+        "React",
+        "AntDesign",
+        "Express",
+        "MongoDB"
+      ],
+      "year": "2023",
+      "url": "https://notehub.shaheerahamed.com",
+      "repoUrl": null
+    },
+     {
+      "id": "0005",
+      "slug": "Curiopost",
+      "order": 5,
+      "published": true,
+      "name": "Curiopost",
+      "description": "Curiopost was a social media platform I built in august 2022. It had a website and was a progressive web app that was installable as a mobile app. It allowed users to create posts and also ask a questions, etc. Curiopost grew to about 100 users until I shut it down a year later. It had a custom for you page algorithm which gives posts based on what the user liked, and more. ",
+      "tags": [
+        "React",
+        "Bootstrap",
+        "Express",
+        "MongoDB",
+        "Cloudinary"
+      ],
+      "year": "2022",
+      "url": null,
+      "repoUrl": null
+    }
+
   ],
-  "skills": ["TypeScript", "React", "Next.js", "Node.js", "Tailwind CSS", "PostgreSQL", "Figma", "Git"]
+  "skills": [
+    "TypeScript",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "Drizzle ORM",
+    "SQL",
+    "Mongoose",
+    "Git",
+    "GitHub"
+  ]
 }

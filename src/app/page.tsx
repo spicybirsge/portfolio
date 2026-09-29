@@ -13,10 +13,10 @@ export default function Home() {
     <Navbar />
     <main id="main-content" className="mx-auto w-full max-w-[672px] space-y-16 px-5 pt-16 sm:px-6 sm:pt-20">
       <section aria-labelledby="intro-title">
-        <p className="flex items-center gap-2 font-mono text-xs text-muted-foreground"><span className="size-2 rounded-full bg-brand" aria-hidden="true" />{portfolio.profile.availability}</p>
+     
         <h1 id="intro-title" className="mt-6 text-4xl font-semibold tracking-tight">{portfolio.profile.name}</h1>
         <p className="mt-4 font-mono text-sm text-brand">{portfolio.profile.role}</p>
-        <p className="mt-5 max-w-[510px] text-base leading-7 text-muted-foreground">{portfolio.profile.summary} Currently working at <span className="text-foreground">{portfolio.profile.company}</span></p>
+        <p className="mt-5 max-w-[510px] text-base leading-7 text-muted-foreground">{portfolio.profile.summary}</p>
         <div className="mt-8 flex flex-wrap gap-6 font-mono text-sm text-muted-foreground">
           <a href={"https://github.com/" + portfolio.github.username} target="_blank" rel="noreferrer" className="hover:text-foreground">github ↗</a>
           <a href={"mailto:" + portfolio.contact.email} className="hover:text-foreground">email ↗</a>

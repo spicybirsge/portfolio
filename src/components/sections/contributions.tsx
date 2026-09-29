@@ -37,7 +37,7 @@ export async function Contributions() {
           </>
         ) : <p className="text-sm text-muted-foreground">{days ? "No contributions found for this period." : "GitHub activity is temporarily unavailable."}</p>}
       </div>
-      <a className="mt-3 inline-block font-mono text-xs text-muted-foreground hover:text-foreground" href={"https://github.com/" + portfolio.github.username} target="_blank" rel="noreferrer">View my GitHub ↗</a>
+      <a className="mt-3 inline-block font-mono text-xs text-muted-foreground hover:text-foreground" href={"https://github.com/" + portfolio.github.username} target="_blank" rel="noreferrer">GitHub ↗</a>
     </section>
   )
 }
