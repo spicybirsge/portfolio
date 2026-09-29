@@ -9,6 +9,6 @@ export function Contact() {
       <a href={"mailto:" + portfolio.contact.email} className="mt-4 inline-block text-sm text-foreground underline decoration-border underline-offset-4 hover:decoration-brand">{portfolio.contact.email} ↗</a>
       <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 font-mono text-xs text-muted-foreground">{portfolio.socials.map((social) => <a key={social.label} href={social.url} target="_blank" rel="noreferrer" className="hover:text-foreground">{social.label.toLowerCase()} ↗</a>)}</div>
     </section>
-    <div className="mt-14 flex flex-wrap justify-between gap-3 border-t pt-5 font-mono text-[10px] text-muted-foreground"><span>© {portfolio.site.name} 2026 - Present. All rights reserved.</span><span>{portfolio.sections.footer}</span></div>
+    <div className="mt-14 flex flex-wrap justify-between gap-3 border-t pt-5 font-mono text-[10px] text-muted-foreground"><span>Copyright &copy; {portfolio.site.name} 2026 - Present. All rights reserved.</span><span>{portfolio.sections.footer}</span></div>
   </footer>
 }

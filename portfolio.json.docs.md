@@ -80,7 +80,6 @@ All fields below are strings.
 | --- | --- |
 | `skillsTitle` | Home-page skills section heading. |
 | `workTitle` | Project section heading on both Home and Work. Despite the name, this controls project cards, not employment history. |
-| `workDescription` | Introductory paragraph below the Work page's main heading. |
 | `experienceTitle` | Employment/freelance experience section heading on Work. |
 | `contactTitle` | Contact section heading on both pages. |
 | `contactDescription` | Contact section paragraph on both pages. |

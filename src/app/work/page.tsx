@@ -7,8 +7,8 @@ import { portfolio } from "@/lib/portfolio"
 export const metadata = { title: "Work" }
 
 export default function WorkPage() {
-  return <><Navbar /><main id="main-content" className="mx-auto w-full max-w-[672px] space-y-16 px-5 pt-16 sm:px-6 sm:pt-20">
-    <section><h1 className="text-4xl font-semibold tracking-tight">Work</h1><p className="mt-5 text-base leading-7 text-muted-foreground">{portfolio.sections.workDescription}</p>
+  return <><Navbar /><main id="main-content" className="mx-auto w-full max-w-[672px] space-y-5 px-5 pt-16 sm:px-6 sm:pt-20">
+    <section><h1 className="text-4xl font-semibold tracking-tight">Work</h1>
     
     </section>
     

@@ -13,7 +13,7 @@ export type PortfolioContent = {
   profile: { name: string; role: string; company: string | null; summary: string; availability: string | null }
   clock: { timeZone: string; label: string }
   github: { username: string; heading: string }
-  sections: { skillsTitle: string; workTitle: string; workDescription: string; experienceTitle: string; contactTitle: string; contactDescription: string; footer: string }
+  sections: { skillsTitle: string; workTitle: string; experienceTitle: string; contactTitle: string; contactDescription: string; footer: string }
   contact: { email: string }
   socials: { label: string; url: string }[]
   work: WorkEntry[]
