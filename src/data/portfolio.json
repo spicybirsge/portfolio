@@ -1,17 +1,53 @@
 {
   "site": {
-    "name": "Portfolio",
-    "shortName": "P",
+    "name": "Shaheer Ahamed",
+    "shortName": "s.",
+    "description": "A developer's corner of the internet. Thoughtful interfaces, useful tools, and things made with care.",
     "resumeUrl": "https://youtube.com"
   },
   "navigation": [
-    { "label": "Home", "href": "/" },
-    { "label": "Work", "href": "/work" },
-    { "label": "Projects", "href": "/projects" },
-    { "label": "About", "href": "/about" }
+    { "label": "home", "href": "/" },
+    { "label": "work", "href": "/work" }
   ],
-  "socials": [],
-  "work": [],
-  "projects": [],
-  "skills": []
+  "profile": {
+    "name": "Your Name",
+    "role": "fullstack developer",
+    "company": "Acme Corp.",
+    "summary": "I build web applications end to end — from database schemas to polished UIs. Focused on performance, clean APIs, and systems that scale.",
+    "eyebrow": "Developer. Designer. Curious human.",
+    "headline": "Making the web",
+    "headlineAccent": "a little more human.",
+    "intro": "Hey, I'm Alex — a software developer who enjoys turning complex ideas into simple, useful digital experiences. Currently building, learning, and chasing the details.",
+    "location": "Colombo, Sri Lanka",
+    "availability": "available for work",
+    "about": "I work at the intersection of design and engineering. From the first sketch to the final interaction, I care about how a product feels as much as how it works. Outside of code, you'll find me exploring new places, collecting ideas, and making another cup of coffee.",
+    "currently": "Exploring creative coding & better developer tools"
+  },
+  "clock": { "timeZone": "Asia/Colombo", "label": "LK" },
+  "github": { "username": "spicybirsge", "heading": "Contributions", "description": "An ongoing record of building, experimenting, and showing up." },
+  "sections": {
+    "skillsTitle": "Tools I work with",
+    "workTitle": "Top projects",
+    "workDescription": "Small experiments and bigger ideas, brought to life with code.",
+    "experienceTitle": "Experience",
+    "aboutTitle": "A person behind the pixels.",
+    "contactTitle": "Get in touch",
+    "contactDescription": "I'm always up for a good conversation, a thoughtful collaboration, or an idea that needs bringing to life.",
+    "footer": "Made with curiosity & a little too much coffee."
+  },
+  "contact": { "email": "hello@example.com", "label": "Let's make it happen." },
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/spicybirsge" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/example" },
+    { "label": "Instagram", "url": "https://www.instagram.com/example" }
+  ],
+  "work": [
+    { "id": "work-1", "slug": "studio-north", "order": 1, "published": true, "company": "Studio North", "role": "Frontend Developer", "startDate": "2025-01-01", "endDate": null, "description": "Building accessible interfaces and a shared design system for a small product team.", "url": null },
+    { "id": "work-2", "slug": "independent", "order": 2, "published": true, "company": "Independent", "role": "Freelance Developer", "startDate": "2023-06-01", "endDate": "2024-12-31", "description": "Helping small businesses bring their ideas online with thoughtful, fast websites.", "url": null }
+  ],
+  "projects": [
+    { "id": "project-1", "slug": "orbit", "order": 1, "published": true, "name": "Orbit", "category": "Productivity / Web app", "description": "A calmer place to plan your day. Tasks, notes, and small wins, all in one thoughtful workspace.", "tags": ["Next.js", "TypeScript", "Tailwind"], "accent": "blue", "monogram": "O", "year": "2026", "url": null, "repoUrl": null },
+    { "id": "project-2", "slug": "fieldnotes", "order": 2, "published": true, "name": "Fieldnotes", "category": "Writing / Personal project", "description": "An intentionally simple home for ideas. Capture the fleeting thoughts and find them when they matter.", "tags": ["React", "MDX", "Design"], "accent": "orange", "monogram": "f.", "year": "2025", "url": null, "repoUrl": null }
+  ],
+  "skills": ["TypeScript", "React", "Next.js", "Node.js", "Tailwind CSS", "PostgreSQL", "Figma", "Git"]
 }
