@@ -56,6 +56,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Content and code quality
 
+- Read [portfolio.json.docs.md](portfolio.json.docs.md) before editing portfolio content, its schema, or components that consume it. It documents each field's meaning, current UI behavior, optional values, ordering, and source files.
+- Keep that reference in sync when adding, removing, or changing a field or its rendering behavior. Verify against the current code and types; do not assume a field is displayed just because it exists in the JSON.
 - Keep visible portfolio copy specific and concise. Do not ship placeholder names, fake testimonials, invented metrics, or dead links.
 - Keep all editable portfolio content in a central JSON file at `src/data/portfolio.json`. This includes profile details, social links, navigation, work history, projects, skills, and the resume URL.
 - Treat `src/data/portfolio.json` as the temporary content source of truth. Pages and components must render from it instead of embedding portfolio copy, project records, work records, or resume links directly in JSX.
