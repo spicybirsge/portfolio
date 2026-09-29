@@ -57,7 +57,18 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## Content and code quality
 
 - Keep visible portfolio copy specific and concise. Do not ship placeholder names, fake testimonials, invented metrics, or dead links.
-- Render project and experience collections from typed data instead of duplicating card markup.
+- Keep all editable portfolio content in a central JSON file at `src/data/portfolio.json`. This includes profile details, social links, navigation, work history, projects, skills, and the resume URL.
+- Treat `src/data/portfolio.json` as the temporary content source of truth. Pages and components must render from it instead of embedding portfolio copy, project records, work records, or resume links directly in JSX.
+- Define matching TypeScript types in `src/types/portfolio.ts` and validate imported JSON at the application boundary when practical. Do not spread untyped JSON access throughout UI components.
+- Access portfolio content through a small module such as `src/lib/portfolio.ts`. This module should expose typed selectors or repository-style functions so the JSON source can later be replaced by an API or database without rewriting page components.
+- Give work and project records stable, unique IDs and URL-safe slugs. Include explicit ordering and publication fields rather than relying on array position or deleting drafts.
+- Model links and media as structured values. Store image paths and resume URLs in JSON, while keeping the actual local assets under `public`.
+- Use ISO 8601 date strings for machine-readable dates. Keep optional display labels separate when a custom presentation such as `Present` is needed.
+- Do not import the JSON file directly from multiple components. Do not mutate it at runtime; it is build-time content until the admin backend is introduced.
+- Keep the content model independent of Next.js rendering details and shadcn components. A future central admin service should be able to return the same shape through an API.
+- When the admin system is added, replace the implementation behind `src/lib/portfolio.ts`, add runtime validation and authentication at the server boundary, and preserve the existing public component props where possible.
+- Never place secrets, private contact data, access tokens, or unpublished credentials in the JSON file because it can be included in the deployed application bundle.
+- Render project and experience collections from the typed content source instead of duplicating card markup.
 - Use semantic links for navigation and calls to action; use buttons only for actions.
 - Keep components focused. Extract a component when it has a reusable interaction, repeated structure, or a clear section boundary.
 - Do not add speculative abstractions, state libraries, or data-fetching libraries to this mostly static site.
@@ -65,6 +76,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## Verification
 
 - Before finishing a code change, run `npm run lint` and `npm run build`.
+- When changing `portfolio.json` or its schema, verify every referenced local asset exists, every slug is unique, and every published item has the fields its UI requires.
 - Check the changed pages at mobile and desktop widths and test keyboard focus for interactive elements.
 - For visual work, compare the rendered page with the relevant Figma frame and report any mismatch caused by missing assets, fonts, or inaccessible design context.
 - For metadata work, verify the generated head tags and inspect favicon, Apple touch icon, and 1200x630 social card outputs at their intended sizes.
