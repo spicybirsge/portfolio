@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useSyncExternalStore } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { CodeXml, Menu, X } from "lucide-react"
@@ -10,8 +10,19 @@ import { LocalClock } from "@/components/local-clock"
 import { portfolio } from "@/lib/portfolio"
 import { cn } from "@/lib/utils"
 
+const subscribeToHydration = () => () => {}
+
 export function Navbar() {
   const pathname = usePathname()
+
+  // The production domain may rewrite the initial request. Defer pathname-based
+  // UI until mount so the server HTML and first client render always agree.
+  const isHydrated = useSyncExternalStore(
+    subscribeToHydration,
+    () => true,
+    () => false
+  )
+  const clientPathname = isHydrated ? pathname : ""
   const [isOpen, setIsOpen] = useState(false)
 
   // Reset menu state when pathname changes during navigation
@@ -63,8 +74,9 @@ export function Navbar() {
               {portfolio.navigation.map((item) => {
                 const active =
                   item.href === "/"
-                    ? pathname === "/"
-                    : pathname === item.href || pathname.startsWith(item.href + "/")
+                    ? clientPathname === "/"
+                    : clientPathname === item.href ||
+                      clientPathname.startsWith(item.href + "/")
                 return (
                   <li key={item.href}>
                     <Link
@@ -116,8 +128,9 @@ export function Navbar() {
               {portfolio.navigation.map((item) => {
                 const active =
                   item.href === "/"
-                    ? pathname === "/"
-                    : pathname === item.href || pathname.startsWith(item.href + "/")
+                    ? clientPathname === "/"
+                    : clientPathname === item.href ||
+                      clientPathname.startsWith(item.href + "/")
                 return (
                   <li key={item.href}>
                     <Link
