@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/navbar";
 import { Suspense } from "react";
 import { Contributions } from "@/components/sections/contributions";
 import { Projects } from "@/components/sections/projects";
@@ -9,8 +8,7 @@ import { portfolio } from "@/lib/portfolio";
 export const revalidate = 3600;
 
 export default function Home() {
-  return <>
-    <Navbar />
+  return (
     <main id="main-content" className="mx-auto w-full max-w-[672px] space-y-16 px-5 pt-16 sm:px-6 sm:pt-20">
       <section aria-labelledby="intro-title">
      
@@ -30,5 +28,5 @@ export default function Home() {
       <section aria-labelledby="tools-title"><SectionHeading id="tools-title">{portfolio.sections.skillsTitle}</SectionHeading><ul className="flex flex-wrap gap-2">{portfolio.skills.map((skill) => <li key={skill} className="rounded-md border bg-card px-3 py-2 font-mono text-xs text-muted-foreground">{skill}</li>)}</ul></section>
       <Contact />
     </main>
-  </>;
+  );
 }
