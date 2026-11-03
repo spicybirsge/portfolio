@@ -169,6 +169,16 @@
       "year": "2022",
       "url": null,
       "repoUrl": null
+    },
+    {
+      "id": "0006",
+      "slug": "Deltify",
+      "order": 0,
+      "published":true,
+      "name": "Deltify",
+      "description": "Deltify is a startup I am currently building, it aims to automate documentation management allowing you to instantly connect your repository and let an ai agent instantly write agent optimized docs and deploy it and give you the link",
+      "tags": ["Typescript", "Nextjs", "ShadCN", "BullMQ", "Cloudflare", "PostgreSQL", "Drizzle", "Redis"],
+      "url":"https://deltify.net"
     }
 
   ],
@@ -184,6 +194,13 @@
     "SQL",
     "Mongoose",
     "Git",
-    "GitHub"
+    "GitHub",
+    "Tanstack Query",
+    "Vercel",
+    "Cloudflare",
+    "Caddy",
+    "Nginx",
+    "PM2",
+    "BullMQ"
   ]
 }
